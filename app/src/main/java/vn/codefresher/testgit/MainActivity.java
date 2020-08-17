@@ -3,10 +3,12 @@ package vn.codefresher.testgit;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText edt_user, edt_pass;
@@ -17,7 +19,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
+        event();
     }
+
+    private void event() {
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Hello", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
     private void init() {
         edt_user = findViewById(R.id.username);
         edt_pass = findViewById(R.id.password);
