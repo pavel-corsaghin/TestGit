@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Test Git</string>
+    <string name="tendangnhap_address">Tên đăng nhập</string>
+    <string name="matkhau_address">Mật khẩu</string>
+    <string name="cb_remember">Save PassWord</string>
+    <string name="btnLogin">Login</string>
 </resources>
